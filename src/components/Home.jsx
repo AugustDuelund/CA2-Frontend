@@ -36,7 +36,7 @@ const changeName = (event) => {
             </label>
             <br/>
             <button type="submit">Login</button>
-            {facade.hasUserAccess('user', loggedIn) || facade.hasUserAccess('admin', loggedIn) &&
+            {facade.hasUserAccess('user', loggedIn) &&
             <p><button onClick={logout}>Logout</button></p>}
             <p>Role: {facade.getUserRoles()}</p>
           </form>
