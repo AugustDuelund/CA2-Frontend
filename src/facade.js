@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080/CA2_Fall_Backend/";
+const URL = "http://localhost:8080/CA2_Backend";
 
 function handleHttpErrors(res)
 {

@@ -15,6 +15,7 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
+import Nationalize from './components/Nationalize';
 
 
 // This site has 3 pages, all of which are rendered
@@ -64,6 +65,7 @@ useEffect( () => {
 
 
 
+
   return (
     <Router>
       <div>
@@ -82,6 +84,9 @@ useEffect( () => {
           </li>
           <li>
             <NavLink exact activeClassName="selected" to="/genderize">Genderize</NavLink>
+          </li>
+          <li>
+            <NavLink exact activeClassName="selected" to="/nationalize">Nationalize</NavLink>
           </li>
         </ul>
 
@@ -117,6 +122,9 @@ useEffect( () => {
           </Route>
           <Route path="/genderize">
           <Genderize/>
+          </Route>
+          <Route path="/nationalize">
+          <Nationalize/>
           </Route>
         </Switch>
         </div>
